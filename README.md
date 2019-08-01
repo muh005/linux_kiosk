@@ -15,6 +15,12 @@ docker build -t muh005/linux_kiosk .
 docker run -p 8443:8443 -p 8888:8888 -v $(pwd)/data:/data -v $(pwd)/code:/code --rm -it muh005/linux_kiosk  
 
 ```
+
+## How to close this?  
+```
+docker system prune
+```
+
 This will spin up the container -starting up VSCode.
 VSCode will be running on:
 http://localhost:8843  
